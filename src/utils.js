@@ -1,3 +1,31 @@
+const euclidGcd = (num1, num2) => {
+  if (!Number.isInteger(num1) || !Number.isInteger(num2)) {
+    throw new Error(`Invalid arguments: ${num1}, ${num2}`);
+  }
+
+  let a = num1;
+  let b = num2;
+
+  while (b !== 0) {
+    const temp = a % b;
+
+    a = b;
+    b = temp;
+  }
+
+  return a;
+};
+
+const getGcd = (...numbers) => {
+  let result = numbers[0];
+
+  for (let i = 1; i < numbers.length; i += 1) {
+    result = euclidGcd(result, numbers[i]);
+  }
+
+  return result;
+};
+
 const randomInt = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
 const getRandomInt = (...range) => {
@@ -9,4 +37,8 @@ const getRandomInt = (...range) => {
 
 const isEven = (number) => number % 2 === 0;
 
-export { getRandomInt, isEven };
+export {
+  getGcd,
+  getRandomInt,
+  isEven,
+};

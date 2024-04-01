@@ -18,4 +18,8 @@
 
 ![brain-even gif](./extra/promo/brain-even.gif)
 
+- Определение наибольшего общего делителя.
+
+![brain-gcd gif](./extra/promo/brain-gcd.gif)
+
 ---
