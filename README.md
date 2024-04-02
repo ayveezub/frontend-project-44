@@ -26,4 +26,8 @@
 
 ![brain-gcd gif](./extra/promo/brain-gcd.gif)
 
+- Определение простого числа.
+
+![brain-prime gif](./extra/promo/brain-prime.gif)
+
 ---
