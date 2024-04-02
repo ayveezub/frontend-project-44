@@ -10,9 +10,9 @@ const operators = {
 };
 
 const getQuestionAndAnswer = () => {
-  const operator = operators[getRandomInt(2)];
-  const num1 = getRandomInt();
-  const num2 = getRandomInt();
+  const operator = operators[getRandomInt(0, 2)];
+  const num1 = getRandomInt(0, 100);
+  const num2 = getRandomInt(0, 100);
 
   if (operator === '+') return [`${num1} ${operator} ${num2}`, `${num1 + num2}`];
   if (operator === '-') return [`${num1} ${operator} ${num2}`, `${num1 - num2}`];
