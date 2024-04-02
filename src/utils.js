@@ -1,8 +1,4 @@
 const getArithmeticProgression = (firstElem, step, length) => {
-  if (!Number.isInteger(firstElem) || !Number.isInteger(step) || !Number.isInteger(length)) {
-    throw new Error(`Invalid arguments: ${firstElem}, ${step}, ${length}`);
-  }
-
   const result = [];
   for (let i = 0; i < length; i += 1) {
     result.push(firstElem + step * i);
@@ -12,10 +8,6 @@ const getArithmeticProgression = (firstElem, step, length) => {
 };
 
 const getEuclidGcd = (num1, num2) => {
-  if (!Number.isInteger(num1) || !Number.isInteger(num2)) {
-    throw new Error(`Invalid arguments: ${num1}, ${num2}`);
-  }
-
   let a = num1;
   let b = num2;
   while (b !== 0) {
@@ -32,10 +24,10 @@ const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1) + 
 
 const isEven = (number) => number % 2 === 0;
 
+const isSomeNonprime = (number) => number <= 1 || (isEven(number) && number !== 2);
+
 const isPrime = (number) => {
-  if (!Number.isInteger(number) || (number % 2 === 0 && number !== 2) || number <= 1) {
-    return false;
-  }
+  if (isSomeNonprime(number)) return false;
 
   const limit = Math.floor(Math.sqrt(number));
   for (let i = 2; i <= limit; i += 1) {

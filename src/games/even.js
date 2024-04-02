@@ -6,9 +6,7 @@ const instructions = 'Answer "yes" if the number is even, otherwise answer "no"'
 const getQuestionAndAnswer = () => {
   const number = getRandomInt(0, 100);
 
-  const correctAnswer = isEven(number) ? 'yes' : 'no';
-
-  return [`${number}`, `${correctAnswer}`];
+  return [`${number}`, `${isEven(number) ? 'yes' : 'no'}`];
 };
 
 export default () => game(instructions, getQuestionAndAnswer);

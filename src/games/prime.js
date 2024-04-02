@@ -6,9 +6,7 @@ const instructions = 'Answer "yes" if given number is prime. Otherwise answer "n
 const getQuestionAndAnswer = () => {
   const number = getRandomInt(0, 100);
 
-  const correctAnswer = isPrime(number) ? 'yes' : 'no';
-
-  return [`${number}`, `${correctAnswer}`];
+  return [`${number}`, `${isPrime(number) ? 'yes' : 'no'}`];
 };
 
 export default () => game(instructions, getQuestionAndAnswer);
