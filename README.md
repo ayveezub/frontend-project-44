@@ -14,6 +14,10 @@
 
 ![brain-calc gif](./extra/promo/brain-calc.gif)
 
+- Прогрессия. Поиск пропущенных чисел в последовательности чисел.
+
+![brain-progression gif](./extra/promo/brain-progression.gif)
+
 - Определение четного числа.
 
 ![brain-even gif](./extra/promo/brain-even.gif)
