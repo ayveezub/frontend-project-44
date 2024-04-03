@@ -26,6 +26,7 @@
 git clone git@github.com:ayveezub/frontend-project-44.git
 cd frontend-project-44
 
+npm install
 npm link
 ```
 
