@@ -24,10 +24,9 @@ const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1) + 
 
 const isEven = (number) => number % 2 === 0;
 
-const isSomeNonprime = (number) => number <= 1 || (isEven(number) && number !== 2);
-
 const isPrime = (number) => {
-  if (isSomeNonprime(number)) return false;
+  if (number <= 1) return false;
+  if (number === 2) return true;
 
   const limit = Math.floor(Math.sqrt(number));
   for (let i = 2; i <= limit; i += 1) {

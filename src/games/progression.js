@@ -4,15 +4,15 @@ import game from '../index.js';
 const instructions = 'What number is missing in the progression?';
 
 const getQuestionAndAnswer = () => {
-  const firstElem = getRandomInt(0, 100);
+  const firstElement = getRandomInt(0, 100);
   const step = getRandomInt(1, 10);
   const length = getRandomInt(5, 10);
 
-  const progression = getArithmeticProgression(firstElem, step, length);
-  const hiddenElemInd = getRandomInt(0, length - 1);
-  const correctAnswer = progression[hiddenElemInd];
+  const progression = getArithmeticProgression(firstElement, step, length);
+  const hiddenElementIndex = getRandomInt(0, length - 1);
+  const correctAnswer = progression[hiddenElementIndex];
 
-  progression[hiddenElemInd] = '..';
+  progression[hiddenElementIndex] = '..';
 
   return [`${progression.join(' ')}`, `${correctAnswer}`];
 };

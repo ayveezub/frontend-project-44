@@ -1,7 +1,7 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/ayveezub/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/ayveezub/frontend-project-44/actions)",
+  "description": "A set of five console games designed to sharpen the mind, inspired by popular mobile brain-training apps.",
   "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-progression": "bin/brain-progression.js",
